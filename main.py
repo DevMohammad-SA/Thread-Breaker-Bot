@@ -21,7 +21,6 @@ async def start(update: Update, context: ContextTypes):
 async def handle_message(update: Update, context: ContextTypes):
     message = update.message.text
     if message:
-        print(f"Received message: {message}")
         await update.message.reply_text("Breaking message into smaller parts...")
     x = 1
     for part in break_message(message):

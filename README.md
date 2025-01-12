@@ -29,14 +29,14 @@ This is a simple Telegram bot that splits long messages into smaller parts (230 
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/DevMohammad-SA/telegram-message-splitter-bot.git
-   cd telegram-message-splitter-bot
+   git clone https://github.com/DevMohammad-SA/Thread-Breaker-Bot.git
+   cd Thread-Breaker-Bot
    ```
 
 2. Install dependencies:
 
    ```bash
-   pip install python-telegram-bot python-dotenv
+   pip install -r requirements.txt
    ```
 
 3. Create a `.env` file and add your bot token:
