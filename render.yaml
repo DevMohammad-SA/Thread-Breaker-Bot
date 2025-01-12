@@ -2,8 +2,9 @@ services:
   - type: web
     name: telegram-message-breaker-bot
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
     startCommand: python main.py
     envVars:
       - key: BOT_TOKEN
         sync: false
+    python_version: 3.11.8
