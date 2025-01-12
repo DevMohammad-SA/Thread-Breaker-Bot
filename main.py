@@ -35,6 +35,7 @@ def main():
     app.add_handler(MessageHandler(
         filters.TEXT & ~filters.COMMAND, handle_message))
     app.run_polling(poll_interval=1)
+    port = int(os.getenv('PORT',8080))
 
 
 if __name__ == "__main__":
